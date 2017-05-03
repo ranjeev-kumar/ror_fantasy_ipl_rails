@@ -1,0 +1,937 @@
+%body
+  %section
+    / LEFT SIDE NAVIGATION MENU
+    .menu
+      %ul
+        / MAIN MENU
+        %li
+          %a.menu-lef-act{:href => "cricket-index.html"}
+            %img{:alt => "", :src => "assets/icon/s1.png"}/
+            Home
+        %li
+          %a{:href => "cricket-all-sports.html"}
+            %img{:alt => "", :src => "assets/icon/c3.png"}/
+            cricket
+        %li
+          %a{:href => "cricket-match-fixing.html"}
+            %img{:alt => "", :src => "assets/icon/c6.png"}/
+            Matchs
+        %li
+          %a{:href => "cricket-events.html"}
+            %img{:alt => "", :src => "assets/icon/f6.png"}/
+            Events
+        %li
+          %a{:href => "cricket-team-ranking.html"}
+            %img{:alt => "", :src => "assets/icon/c2.png"}/
+            Ranking
+        %li
+          %a{:href => "cricket-team-squad.html"}
+            %img{:alt => "", :src => "assets/icon/f7.png"}/
+            Squad
+        %li
+          %a{:href => "cricket-match.html"}
+            %img{:alt => "", :src => "assets/icon/c4.png"}/
+            Live match
+        %li
+          %a{:href => "cricket-booking.html"}
+            %img{:alt => "", :src => "assets/icon/s17.png"}/
+            Tickets
+        %li
+          = link_to image_tag('/assets/icon/r2.png') + "Register", team_registration_path
+        %li
+          %a{:href => "cricket-training.html"}
+            %img{:alt => "", :src => "assets/icon/g3.png"}/
+            Training
+        %li
+          %a{:href => "cricket-join-our-club.html"}
+            %img{:alt => "", :src => "assets/icon/cy5.png"}/
+            Join Club
+        %li
+          %a{:href => "cricket-about.html"}
+            %img{:alt => "", :src => "assets/icon/about.png"}/
+            About
+        %li
+          %a{:href => "cricket-contact.html"}
+            %img{:alt => "", :src => "assets/icon/contact.png"}/
+            Contact Us
+    / RIGHT SIDE NAVIGATION MENU
+    / MOBILE MENU(This mobile menu show on 0px to 767px windows only)
+    .mob-menu
+      %span
+        %i.fa.fa-bars{"aria-hidden" => "true"}
+    .mob-close
+      %span
+        %i.fa.fa-times{"aria-hidden" => "true"}
+  / TOP BAR -PHONE EMAIL AND TOP MENU
+  %section.i-head-top
+    .i-head.row
+      / TOP CONTACT INFO
+      .i-head-left.i-head-com.col-md-6
+        %ul
+          %li
+            %a{:href => "cricket-index.html#"} phone: +01 6514 7415
+          %li
+            %a{:href => "cricket-index.html#"} Email: sports2017@sports.com
+      / TOP FIXED MENU
+      .i-head-right.i-head-com.col-md-6.col-sm-12.col-xs-12
+        %ul
+          %li.top-scal
+            %a{:href => "cricket-booking.html"}
+              %i.fa.fa-ticket{"aria-hidden" => "true"}
+              Ticket Booking
+          %li.top-scal-1
+            %a{:href => "cricket-event-register.html"}
+              %i.fa.fa-registered{"aria-hidden" => "true"}
+              Event Register
+          %li
+            %a.tr-menu{:href => "cricket-index.html#"}
+              %i.fa.fa-chevron-down{"aria-hidden" => "true"}
+              Browse
+            .cat-menu
+              .col-md-3.col-sm-6.cm1.mob-hid
+                %h4 Top Trendings This month
+                %ul
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      cricket Training For Beginners
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      UEFA Champions League
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      Join Our Club &amp; Donate
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      Under 18 cricket Cup, Atlanda
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      cricket League - Register Now!
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      cricket - Summer Camp
+                  %li
+                    %a{:href => "cricket-events.html"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      View All Events
+              .col-md-3.col-sm-6.cm1.mob-hid
+                %h4 Upcoming cricket Matches
+                %ul
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      the alchemists vs orleanss saints
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      attlanta braves vs torontoo
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      buffalo billss vs west brromwich
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      boston bruinss vs detroit
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      bloody wave vs alouettess
+                  %li
+                    %a{:href => "cricket-index.html#"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      cowboys vs aathletics
+                  %li
+                    %a{:href => "cricket-match-fixing.html"}
+                      %i.fa.fa-angle-right{"aria-hidden" => "true"}
+                      View All Matches
+              .col-md-6
+                %h4 2017 upcoming league matches
+                .foot-pop.top-me-ev
+                  %ul
+                    %li
+                      %a{:href => "cricket-index.html#"}
+                        %img{:alt => "", :src => "assets/trends/2.jpeg"}/
+                        .foot-pop-eve.top-me-text
+                          %span cricket: AUGUST 23RD, 2017
+                          %h4 Football:THIS SATURDAY STARTS THE INTENSIVE TRAINING FOR THE FINAL,NEW YORK
+                    %li
+                      %a{:href => "cricket-index.html#"}
+                        %img{:alt => "", :src => "assets/trends/5.jpg"}/
+                        .foot-pop-eve.top-me-text
+                          %span BoduBuilding: AUGUST 23RD, 2017
+                          %h4 BoduBuilding:JAKE DRIBBLER ANNOUNCED THAT HE IS RETIRING NEXT MNONTH
+                    %li
+                      %a{:href => "cricket-index.html#"}
+                        %img{:alt => "", :src => "assets/trends/6.jpeg"}/
+                        .foot-pop-eve.top-me-text
+                          %span BASKETBALL: AUGUST 23RD, 2017
+                          %h4 BASKETBALL:THE ALCHEMISTS NEWS COACH IS BRINGIN A NEW SHOOTING GUARD
+              .cbb2-home-nav-bot.mob-hid
+                %ul
+                  %li
+                    The Power of Refined Local Search, Now in Your Hands
+                    %span Call us on: +01 3214 6581
+                  %li
+                    %a.cbb2-ani-btn-join{:href => "javascript:void(0);"}
+                      %i.fa.fa-user{"aria-hidden" => "true"}
+                      Account
+                  %li
+                    %a.cbb2-ani-btn{:href => "cricket-join-our-club.html"}
+                      %i.fa.fa-life-buoy{"aria-hidden" => "true"}
+                      Join Our Club
+                  %li
+                    %a.cbb2-ani-btn{:href => "cricket-join-club.html"}
+                      %i.fa.fa-dollar{"aria-hidden" => "true"}
+                      Make Donation
+  / SECTION: HEADER AND BANNER
+  %section
+    .home
+      .h_l
+        / BRAND LOGO AND EVENT NAMES
+        %img{:alt => "", :src => "assets/cricket-logo.png"}/
+        %h2 Current cricket Events
+        %p Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit, sed diam non ummy nibh euismod tinc idunt ut laoreet dolore magna ali quam erat volutpat.
+        %ul
+          %li
+            %a{:href => "cricket-match.html"}
+              %span> 1
+              World Twenty20, 2017
+          %li
+            %a{:href => "cricket-training.html"}
+              %span> 2
+              Cricket Training for Kids
+          %li
+            %a{:href => "cricket-join-our-club.html"}
+              %span> 3
+              Join Our Club &amp; Donate
+          %li
+            %a{:href => "cricket-match.html"}
+              %span> 4
+              Cricket Training - Register Now!
+          %li
+            %a{:href => "cricket-match.html"}
+              %span> 5
+              Selection for Under 18
+        %a.aebtn{:href => "cricket-all-sports.html"} View All Events
+      .h_r
+        .slideshow-container
+          .mySlides.fade
+            .numbertext 1 / 2
+            %a{:href => "cricket-index.html#"}
+              %img{:alt => "", :src => "assets/banner/cricket1.jpg"}/
+          / .mySlides.fade
+          /   .numbertext 2 / 2
+          /   %a{:href => "cricket-index.html#"}
+          /     %img{:alt => "", :src => "assets/banner/b6.jpg"}/
+          / %a.prev{:onclick => "plusSlides(-1)"} ❮
+          / %a.next{:onclick => "plusSlides(1)"} ❯
+  / SEARCH BOX
+  %section
+    .hom-search.lp
+      .row
+        .hom-search-inn
+          %form
+            %ul
+              %li
+                %input{:placeholder => "Search cricket News and Events Now!", :type => "text"}/
+              %li
+                %input{:type => "submit", :value => "SEARCH"}/
+  / SECTION: UPCOMING SPORTS EVENTS
+  %section
+    .se.lp
+      .row
+        / TITLE
+        .spe-title-1
+          %h2
+            Upcoming
+            %span cricket SPOTLIGHT
+            in this month
+          .hom-tit
+            .hom-tit-1
+            .hom-tit-2
+            .hom-tit-3
+          %p Feel the thrill of seeing a global sporting event in one of the world's most incredible cities. Headlining the calendar is the Dubai World Cup
+        / LEFT SIDE: SPORTS EVENTS
+        .event-left.col-md-9
+          / Sports Events in Dubai
+          %ul
+            / SPORTS EVENT:1
+            %li
+              .el-img
+                %img.img-responsive{:alt => "", :src => "assets/event/cricket/1.jpg"}/
+              .el-con
+                %span Jun 05 - Aug 27
+                %h3 ICC Champions Trophy 2017, Australia
+                %p The indoor sports mania is back again offering all sorts of indoor sports in the summer.
+                %a{:href => "cricket-match.html"} Register Now
+                %a{:href => "cricket-match.html"} Ticket Booking
+                %a{:href => "cricket-match.html"} Read More
+            / SPORTS EVENT:2
+            %li
+              .el-img
+                %img.img-responsive{:alt => "", :src => "assets/event/cricket/2.jpg"}/
+              .el-con
+                %span Jun 05 - Aug 27
+                %h3 U19 Cricket World Cup 2018, England
+                %p The indoor sports mania is back again offering all sorts of indoor sports in the summer.
+                %a{:href => "cricket-match.html"} Register Now
+                %a{:href => "cricket-match.html"} Ticket Booking
+                %a{:href => "cricket-match.html"} Read More
+            / SPORTS EVENT:3
+            %li
+              .el-img
+                %img.img-responsive{:alt => "", :src => "assets/event/cricket/3.jpg"}/
+              .el-con
+                %span Jun 05 - Aug 27
+                %h3 Join Cricket academies &amp; coaching at Bristol
+                %p The indoor sports mania is back again offering all sorts of indoor sports in the summer.
+                %a{:href => "cricket-match.html"} Register Now
+                %a{:href => "cricket-match.html"} Ticket Booking
+                %a{:href => "cricket-match.html"} Read More
+            / SPORTS EVENT:4
+            %li
+              .el-img
+                %img.img-responsive{:alt => "", :src => "assets/event/cricket/4.jpg"}/
+              .el-con
+                %span Jun 05 - Aug 27
+                %h3 Professional Cricket Coaching for players, New Zealand
+                %p The indoor sports mania is back again offering all sorts of indoor sports in the summer.
+                %a{:href => "cricket-match.html"} Register Now
+                %a{:href => "cricket-match.html"} Ticket Booking
+                %a{:href => "cricket-match.html"} Read More
+            / SPORTS EVENT:4
+            %li
+              .el-img
+                %img.img-responsive{:alt => "", :src => "assets/event/cricket/5.jpg"}/
+              .el-con
+                %span Jun 05 - Aug 27
+                %h3 Grand Opening Cricket Fan Club, India
+                %p The indoor sports mania is back again offering all sorts of indoor sports in the summer.
+                %a{:href => "cricket-match.html"} Register Now
+                %a{:href => "cricket-match.html"} Ticket Booking
+                %a{:href => "cricket-match.html"} Read More
+        / RIGHT SIDE: FEATURE EVENTS
+        .event-right.col-md-3
+          %ul
+            %li.event-right-bg-1
+              %h4 warriors vs spurs
+              %p The indoor sports mania is back again offering all sorts of indoor
+              %a{:href => "cricket-match.html"} View More
+            %li.event-right-bg-2.p-cri-hom-2
+              %h4 cricket batting training
+              %p The indoor sports mania is back again offering all sorts of indoor
+              %a{:href => "cricket-match.html"} View More
+            %li.event-right-bg-3.p-cri-hom-3.pad-red-bot-0
+              %h4 Club Cricket Kits
+              %p The indoor sports mania is back again offering all sorts of indoor
+              %a{:href => "cricket-match.html"} View More
+  / SECTION: CHAMPIONS LEAGUE
+  %section
+    .uc.uc-cricket
+      .lp.uc1
+        .row
+          .hom-tick-book
+            %h2 U19 Cricket World Cup
+            .hom-tick
+              .hom-tick-1
+                %h3 26 July 2017
+              .hom-tick-2
+                %span.hom-tick-21 Preparing for the awesome Cricket experience
+            %a.hvr-sweep-to-right{:href => "cricket-match.html"} Ticket Booking
+  / SECTION: PICK A SPORTS
+  %section
+    .lp.spe-bot-red-3
+      .ela
+        / TITLE
+        .spe-title-1
+          %h2
+            Pick a
+            %span Class and join
+            the fun today
+          .hom-tit
+            .hom-tit-1
+            .hom-tit-2
+            .hom-tit-3
+          %p Feel the thrill of seeing a global sporting event in one of the world's most incredible cities. Headlining the calendar is the Dubai World Cup
+        .hom-top-trends-box.row
+          .col-md-6.hom-top-trends-box-1
+            .hom-top-trends-box-11
+              %img.img-responsive{:alt => "", :src => "assets/trends/1.jpg"}/
+          .col-md-6.hom-top-trends-box-2
+            .hom-top-trends-box-21.p-cri
+              %h4 London: Junior Tournaments
+              %p The indoor sports mania is back again offering all sorts of indoor
+              %a{:href => "cricket-match.html"} View More
+          .col-md-6.hom-top-trends-box-2
+            .hom-top-trends-box-21.hom-top-trends-box-22.p-cri1
+              %h4 Improve sports skills
+              %p The indoor sports mania is back again offering all sorts of indoor
+              %a{:href => "cricket-match.html"} View More
+        .hom-top-trends.row
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/1.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Away Swing Bowlers - Grip (Right arm)
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/11.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Back foot drive
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/9.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Back Foot Defence
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/4.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Example of advancing down wicket
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+        .hom-top-trends.row
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/5.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Front View (no Gloves)
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/6.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Inswing Bowling Grip (Right Arm)
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/7.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Leg Spin - Grip
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+          / TOP TRENDINGS
+          .col-md-3
+            .hom-trend.pad-red-bot-0
+              .hom-trend-img
+                %img.img-responsive{:alt => "", :src => "assets/trends/cricket/8.jpg"}/
+              .hom-trend-con
+                %span
+                  %i.fa.fa-futbol-o{"aria-hidden" => "true"}
+                  2rd augest 2017
+                %a{:href => "cricket-all-sports.html"}
+                  %h4 Sample drop feed
+                %p The Sports Games also celebrated and showcased sport, thanks to the city’s stunning setting
+  / SECTION: EVENTS AND POINTS
+  %section.ev-po
+    .lp
+      .row
+        .col-md-6.eve-res
+          .events.ev-po-1.ev-po-com
+            .ev-po-title.pag-cri-inn-combg1
+              %h3 Upcoming cricket Events
+              %p Headlining the calendar is the Dubai World Cup
+            %table.myTable
+              %tbody
+                %tr
+                  %th #
+                  %th Event
+                  %th.e_h1 Place
+                  %th Booking
+                  %th Register
+                %tr
+                  %td 01
+                  %td
+                    %img{:alt => "", :src => "assets/trends/3.jpg"}/
+                    .h-tm-ra1
+                      %h4 Football
+                      %span AUG 23RD, 2017
+                  %td.e_h1 Barcelona
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 02
+                  %td
+                    %img{:alt => "", :src => "assets/trends/2.jpeg"}/
+                    .h-tm-ra1
+                      %h4 Handball
+                      %span SEPT 02RD, 2016
+                  %td.e_h1 London
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 03
+                  %td
+                    %img{:alt => "", :src => "assets/trends/4.jpg"}/
+                    .h-tm-ra1
+                      %h4 Rugby Pro
+                      %span JANUARY 12TH, 2018
+                  %td.e_h1 Tokyo
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 04
+                  %td
+                    %img{:alt => "", :src => "assets/trends/5.jpg"}/
+                    .h-tm-ra1
+                      %h4 Volleyball
+                      %span NOV 05TH, 2017
+                  %td.e_h1 Melbourne
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 05
+                  %td
+                    %img{:alt => "", :src => "assets/trends/6.jpeg"}/
+                    .h-tm-ra1
+                      %h4 The Alchemists
+                      %span DEC 07TH, 2017
+                  %td.e_h1 Beijing
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 06
+                  %td
+                    %img{:alt => "", :src => "assets/trends/7.jpg"}/
+                    .h-tm-ra1
+                      %h4 Cricket
+                      %span OCT 18TH, 2017
+                  %td.e_h1 Berlin
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 07
+                  %td
+                    %img{:alt => "", :src => "assets/trends/8.jpg"}/
+                    .h-tm-ra1
+                      %h4 Basketball
+                      %span JUNE 21TH, 2017
+                  %td.e_h1 Rio
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 08
+                  %td
+                    %img{:alt => "", :src => "assets/trends/9.jpeg"}/
+                    .h-tm-ra1
+                      %h4 Badminton
+                      %span MAY 04TH, 2018
+                  %td.e_h1 Manchester
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 09
+                  %td
+                    %img{:alt => "", :src => "assets/trends/10.jpeg"}/
+                    .h-tm-ra1
+                      %h4 marathon
+                      %span MARCH 28TH, 2017
+                  %td.e_h1 Toronto
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+                %tr
+                  %td 10
+                  %td
+                    %img{:alt => "", :src => "assets/trends/2.jpeg"}/
+                    .h-tm-ra1
+                      %h4 Tennis
+                      %span FEB 4TH, 2020
+                  %td.e_h1 Sydney
+                  %td
+                    %a.link-btn{:href => "booking.html"} Book Now
+                  %td
+                    %a.link-btn.reg-btn{:href => "team-register.html"} Register Now
+        .col-md-6.eve-res
+          .events.ev-po-2.ev-po-com
+            .ev-po-title.pag-cri-inn-combg
+              %h3 Player Ranking 2017
+              %p Headlining the calendar is the Dubai World Cup
+            %table.myTable
+              %tbody
+                %tr
+                  %th Rank
+                  %th TEAMS
+                  %th W
+                  %th L
+                  %th D
+                  %th PTS
+                %tr
+                  %td 01
+                  %td
+                    %img{:alt => "", :src => "assets/coun/19.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 02
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t2.png"}/
+                    .h-tm-ra
+                      %h4 Bloody Wave
+                      %span Atlantic School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 03
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t3.png"}/
+                    .h-tm-ra
+                      %h4 L.A Pirates
+                      %span Bebop Institute
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 04
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t4.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 05
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t5.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 06
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t6.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 07
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t7.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 08
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t8.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 09
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t9.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+                %tr
+                  %td 10
+                  %td
+                    %img{:alt => "", :src => "assets/coun/t9.png"}/
+                    .h-tm-ra
+                      %h4 The Alchemists
+                      %span Eric Bros School
+                  %td 84
+                  %td 36
+                  %td 12
+                  %td 168
+  / SECTION:JOIN CLUB AND MAKE DONATION
+  %section
+    .lp
+      / TITLE
+      .spe-title-1
+        %h2
+          Fundraising for Sports
+          %span Clubs &amp; Charities
+        .hom-tit
+          .hom-tit-1
+          .hom-tit-2
+          .hom-tit-3
+        %p Feel the thrill of seeing a global sporting event in one of the world's most incredible cities. Headlining the calendar is the Dubai World Cup
+      .ela
+        / JOIN OUR CLUB: LEFT SIDE IMAGE
+        .a21
+          %img{:alt => "", :src => "assets/join.jpeg"}/
+        / JOIN OUR CLUB: RIGHT SIDE
+        .a22.home-join.pad-red-bot-0.pad-red-bot-pad-0
+          %h2 Be a good sport and donate to your local club through
+          %span.spor-eve-sp Over 200 members and growing, We love our team. Fundraise or donate to Sport Relief with Us.The worlds leading online fundraising platform, helping charities to make more
+          %p
+            Cras justo odio, dapisonec elit non mi porta gravida curab blait tempus. Maecenas sed diam eget risus varius blandit sit amet non magna rutrum faucibus dolor auctor.
+            = succeed "Cras" do
+              %br/
+          %ul
+            %li
+              %a.joc{:href => "cricket-join-our-club.html"} Join Our Club
+            %li
+              %a.md{:href => "cricket-join-club.html"} Make Donations
+  / SECTION: BLOG POSTS
+  %section
+    .blog.row
+      .lp
+        / BLOG POST: POST DATE
+        .blog-1.col-md-2
+          %span Latest Posts
+          %h4 25
+          %span Augest 2016
+        / BLOG POST: POST NAME & DESCRIPTION
+        .blog-2.col-md-8
+          %ul
+            %li
+              %a{:href => "cricket-index.html#"}
+                %h4 WESTERN SYDNEY WANDERERS VS URAWA RED DIAMONDS
+            %li
+              %p In efficitur nisi et condimentum mattis. Duis et aliquet purus, quis congue elit. Cras volutpat dapibus molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec posuere mollis augue, a accumsan libero egestas sit amet.Vestibulum posuere erat tortor, porta tempus leo condimentum sed.
+        / BLOG POST: POST COMMENTS,TAG AND SOCIAL MEDIA
+        .blog-3.col-md-2
+          %ul
+            %li
+              %i.fa.fa-comment-o{"aria-hidden" => "true"}
+              Comments
+            %li
+              %i.fa.fa-tag{"aria-hidden" => "true"}
+              Tag
+            %li
+              %i.fa.fa-share-alt{"aria-hidden" => "true"}
+              Share This
+  / SECTION: FOOTER
+  %section
+    .ffoot
+      .lp
+        / SECTION: FOOTER
+        .row
+          .col-md-12.foot1
+            %a{:href => "cricket-index.html#"}
+              %img{:alt => "", :src => "assets/cricket-logo.png"}/
+            %ul
+              %li
+                %span 10,231,124
+                Community Members
+              %li
+                %span 512
+                Sports Events
+              %li
+                %span 2124
+                Sports Games
+        / SECTION: FOOTER
+        .row.foot2
+          .col-md-3
+            .foot2-1.foot-com
+              %h4 USA: ADDRESS &amp; CONTACT
+              %p 28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport
+            .foot2-2.foot-soc.foot-com
+              %h4 Follow Us Now
+              %p Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor
+              %ul
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-facebook.fb1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-twitter.tw1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-google-plus.gp1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-whatsapp.wa1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-envelope-o.sh1
+              %span.foot-ph Phone: +01 3214 6581
+          .col-md-3
+            .foot2-1.foot-com
+              %h4 UAE: ADDRESS &amp; CONTACT
+              %p No 3241, Grandiz Street Towers, Desay City, U.A.E. Landmark : Next To Grand Hotel
+            .foot2-2.foot-soc.foot-com
+              %h4 Follow Us Now
+              %p Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor
+              %ul
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-facebook.fb1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-twitter.tw1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-google-plus.gp1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-whatsapp.wa1
+                %li
+                  %a{:href => "cricket-index.html#"}
+                    %i.fa.fa-envelope-o.sh1
+              %span.foot-ph Phone: +71 8596 4152
+          .col-md-6
+            .foot2-32.foot-pop.foot-com
+              %h4 POPULAR Sports Events
+              %p Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor
+              %ul
+                %li
+                  %img{:alt => "", :src => "assets/trends/2.jpeg"}/
+                  .foot-pop-eve
+                    %span cricket
+                    %h4 Football:THIS SATURDAY STARTS THE INTENSIVE TRAINING FOR THE FINAL
+                    %p AUGUST 23RD, 2017
+                %li
+                  %img{:alt => "", :src => "assets/trends/5.jpg"}/
+                  .foot-pop-eve
+                    %span Cricket
+                    %h4 Cricket:JAKE DRIBBLER ANNOUNCED THAT HE IS RETIRING NEXT MNONTH
+                    %p AUGUST 23RD, 2017
+                %li
+                  %img{:alt => "", :src => "assets/trends/6.jpeg"}/
+                  .foot-pop-eve
+                    %span BASKETBALL
+                    %h4 BASKETBALL:THE ALCHEMISTS NEWS COACH IS BRINGIN A NEW SHOOTING GUARD
+                    %p AUGUST 23RD, 2017
+        / SECTION: FOOTER
+        .row
+          .col-md-12.foot4
+            %h5 Our Sponsors
+            %ul
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/1.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/2.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/3.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/4.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/5.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/6.png"}/
+              %li
+                %a{:href => "cricket-index.html#"}
+                  %img{:alt => "", :src => "assets/sponsor/2.png"}/
+  / Footer
+  %section
+    / FOOTER: COPY RIGHTS
+    .fcopy
+      .lp.copy-ri.row
+        .col-md-6.col-sm-12.col-xs-12 Copyright © 2017 Sports Club. All Rights Reserved.
+        .col-md-6.foot-privacy
+          %ul
+            %li
+              %a{:href => "cricket-index.html#"} Privacy
+            %li
+              =link_to "Terms & Conditions", termsandconditions_path
+            %li
+              %a{:href => "cricket-index.html#"} Security
+            %li
+              %a{:href => "cricket-index.html#"} Policy
+            %li
+              %a{:href => "join-club.html"} Make Sponsors
+  :javascript
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90614514-1', 'auto');
+    ga('send', 'pageview');
