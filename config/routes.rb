@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :users
+    resources :matches
+    resources :players
+    resources :points
+    resources :teams
+    resources :team_player_scores
+    resources :user_teams
+
+    root to: "users#index"
+  end
+
 resources :teams
 devise_for :users
 resources :dashboards
