@@ -8,7 +8,7 @@ class PlayerDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    team: Field::BelongsTo,
+    franchise: Field::FranchiseField.with_options(searchable: false),
     id: Field::Number,
     name: Field::String,
     type: Field::String,
@@ -23,16 +23,16 @@ class PlayerDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :team,
     :id,
     :name,
+    :franchise,
     :type,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
-    :team,
+    :franchise,
     :id,
     :name,
     :type,
@@ -45,7 +45,7 @@ class PlayerDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :team,
+    :franchise,
     :name,
     :type,
     :point,

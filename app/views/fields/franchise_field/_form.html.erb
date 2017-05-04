@@ -1,0 +1,10 @@
+<div class="field-unit__label">
+  <%= f.label field.attribute %>
+</div>
+<div class="field-unit__field">
+  <%= f.select field.attribute,
+               Franchise.all.map { |f| [f.name, f.id] },
+               { prompt: "Select Franchise" },
+               { class: 'chosen-select' }
+  %>
+</div>

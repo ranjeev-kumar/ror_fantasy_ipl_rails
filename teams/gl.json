@@ -1,0 +1,256 @@
+{
+	"s_dineshlad": {
+	"key": "s_dineshlad",
+	"card_name": "S Dinesh Lad",
+
+
+	"playing_role": "Batsman",
+	"full_name": "Siddhesh Dinesh Lad",
+	"name": "Siddhesh Dinesh Lad"
+	},
+	"m_mcclenaghan": {
+	"key": "m_mcclenaghan",
+	"card_name": "MJ Mcclenaghan",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Mitchell John McClenaghan",
+	"name": "Mitchell McClenaghan"
+	},
+	"v_kumar": {
+	"key": "v_kumar",
+	"card_name": "RV Kumar",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Ranganath Vinay Kumar",
+	"name": "Vinay Kumar"
+	},
+	"m_lange": {
+	"key": "m_lange",
+	"card_name": "M de Lange",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Marchant de Lange",
+	"name": "Marchant de Lange"
+	},
+	"n_singh": {
+	"key": "n_singh",
+	"card_name": "NB Singh",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Nathu Bharat Singh",
+	"name": "Nathu Singh"
+	},
+	"k_kamath": {
+	"key": "k_kamath",
+	"card_name": "Kishore Kamath",
+
+
+	"playing_role": "Allrounder",
+	"full_name": "Kishore Kamath",
+	"name": "Kishore Kamath"
+	},
+	"ni_rana": {
+	"key": "ni_rana",
+	"card_name": "Nitish Rana",
+
+
+	"playing_role": "Batsman",
+	"full_name": "Nitish Rana",
+	"name": "Nitish Rana"
+	},
+	"l_simmons": {
+	"key": "l_simmons",
+	"card_name": "LMP Simmons",
+
+
+	"playing_role": "Batsman",
+	"full_name": "Lendl Mark Platter Simmons",
+	"name": "Lendl Simmons"
+	},
+	"u_chand": {
+	"key": "u_chand",
+	"card_name": "U Chand",
+
+
+	"playing_role": "Top-order batsman",
+	"full_name": "Unmukt Chand",
+	"name": "Unmukt Chand"
+	},
+	"k_pollard": {
+	"key": "k_pollard",
+	"card_name": "KA Pollard",
+
+
+	"playing_role": "Allrounder",
+	"full_name": "Kieron Adrian Pollard",
+	"name": "Kieron Pollard"
+	},
+	"k_pandya": {
+	"key": "k_pandya",
+	"card_name": "KH Pandya",
+
+
+	"playing_role": "Allrounder",
+	"full_name": "Krunal Himashu Pandya",
+	"name": "Krunal Pandya"
+	},
+	"d_punia": {
+	"key": "d_punia",
+	"card_name": "DS Punia",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Deepak Samundersingh Punia",
+	"name": "Deepak Punia"
+	},
+	"h_pandya": {
+	"key": "h_pandya",
+	"card_name": "H Pandya",
+
+
+	"playing_role": "Allrounder",
+	"full_name": " Hardik Himanshu Pandya",
+	"name": "Hardik Pandya"
+	},
+	"j_bumrah": {
+	"key": "j_bumrah",
+	"card_name": "J Bumrah",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Jasprit Jasbirsingh Bumrah",
+	"name": " Jasprit Bumrah"
+	},
+	"ji_sharma": {
+	"key": "ji_sharma",
+	"card_name": "JM Sharma",
+
+
+	"playing_role": "Wicketkeeper",
+	"full_name": "Jitesh Mohan Sharma",
+	"bowling_style": [ ],
+	"name": "Jitesh Sharma"
+	},
+	"j_buttler": {
+	"key": "j_buttler",
+	"card_name": "JC Buttler",
+
+
+	"playing_role": "Wicketkeeper",
+	"full_name": "Joseph Charles Buttler",
+	"bowling_style": [ ],
+	"name": "Jos Buttler"
+	},
+	"hr_singh": {
+	"key": "hr_singh",
+	"card_name": "Harbhajan Singh",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Harbhajan Singh",
+	"name": "Harbhajan Singh"
+	},
+	"p_patel": {
+	"key": "p_patel",
+	"card_name": "PA Patel",
+
+
+	"playing_role": "Wicket Keeper",
+	"full_name": "Parthiv Ajay Patel",
+	"name": "Parthiv Patel"
+	},
+	"l_malinga": {
+	"key": "l_malinga",
+	"card_name": "SL Malinga",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Separamadu Lasith Malinga",
+	"name": "Lasith Malinga"
+	},
+	"a_wakhare": {
+	"key": "a_wakhare",
+	"card_name": "A Wakhare",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Akshay Anil Wakhare",
+	"name": "Akshay Wakhare"
+	},
+	"je_taylor": {
+	"key": "je_taylor",
+	"card_name": "JE Taylor",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Jerome Everton Taylor",
+	"name": "Jerome Taylor"
+	},
+	"s_gopal": {
+	"key": "s_gopal",
+	"card_name": "S Gopal",
+
+
+	"playing_role": "Allrounder",
+	"full_name": "Shreyas Gopal",
+	"name": "Shreyas Gopal"
+	},
+	"a_rayudu": {
+	"key": "a_rayudu",
+	"card_name": "AT Rayudu",
+
+
+	"playing_role": "Wicketkeeper batsman",
+	"full_name": "Ambati Thirupathi Rayudu",
+	"name": "Ambati Rayudu"
+	},
+	"rg_sharma": {
+	"key": "rg_sharma",
+	"card_name": "RG Sharma",
+
+
+	"playing_role": "Batsman",
+	"full_name": "Rohit Gurunath Sharma",
+	"name": "Rohit Sharma"
+	},
+	"c_anderson": {
+	"key": "c_anderson",
+	"card_name": "CJ Anderson",
+
+
+	"playing_role": "Allrounder",
+	"full_name": "Corey James Anderson",
+	"name": "Corey Anderson"
+	},
+	"j_suchith": {
+	"key": "j_suchith",
+	"card_name": "J Suchith",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Jagadeesha Suchith",
+	"name": "Jagadeesha Suchith"
+	},
+	"m_guptill": {
+	"key": "m_guptill",
+	"card_name": "MJ Guptill",
+
+
+	"playing_role": "Top-order batsman",
+	"full_name": "Martin James Guptill",
+	"name": "Martin Guptill"
+	},
+	"t_southee": {
+	"key": "t_southee",
+	"card_name": "TG Southee",
+
+
+	"playing_role": "Bowler",
+	"full_name": "Timothy Grant Southee",
+	"name": "Tim Southee"
+	}
+}
