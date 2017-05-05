@@ -8,7 +8,7 @@ class TeamDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    players: Field::HasMany,
+    players: Field::PlayerField.with_options(searchable: false),
     id: Field::Number,
     name: Field::String,
     owner: Field::String,
@@ -28,10 +28,10 @@ class TeamDashboard < Administrate::BaseDashboard
   # By default, it's limited to four items to reduce clutter on index pages.
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
-    :players,
     :id,
     :name,
     :owner,
+    :players,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES

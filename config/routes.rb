@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :teams
     resources :team_player_scores
     resources :user_teams
+    resources :franchises
 
     root to: "users#index"
   end

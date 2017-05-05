@@ -2,5 +2,9 @@
   <%= f.label field.attribute %>
 </div>
 <div class="field-unit__field">
-  <%= f.text_field field.attribute %>
+  <%= f.select field.attribute,
+               Player.all.map { |f| [f.name, f.id] },
+               { prompt: "Select Player" },
+               { multiple: true }
+  %>
 </div>
