@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504103517) do
+ActiveRecord::Schema.define(version: 20170508123012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 20170504103517) do
     t.float    "point"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "ranking"
   end
 
   create_table "matches", force: :cascade do |t|
@@ -67,75 +68,64 @@ ActiveRecord::Schema.define(version: 20170504103517) do
     t.datetime "end_time"
     t.string   "team1_score"
     t.string   "team2_score"
-    t.string   "winner"
     t.string   "match_result"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "winner"
+    t.float    "team1_over"
+    t.float    "team2_over"
+    t.integer  "mathch_player"
+    t.string   "toss"
   end
 
   create_table "players", force: :cascade do |t|
     t.string   "name"
-    t.string   "type"
-    t.float    "point"
-    t.integer  "team_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.integer  "franchise_id"
+    t.string   "role"
+    t.boolean  "capped",       default: true
+    t.boolean  "indian",       default: false
   end
 
   add_index "players", ["franchise_id"], name: "index_players_on_franchise_id", using: :btree
-  add_index "players", ["team_id"], name: "index_players_on_team_id", using: :btree
 
-  create_table "points", force: :cascade do |t|
-    t.string   "name"
-    t.string   "points"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "team_player_scores", force: :cascade do |t|
-    t.integer  "team_id"
+  create_table "score_cards", force: :cascade do |t|
+    t.integer  "run_scored"
+    t.integer  "ball_played"
+    t.integer  "four"
+    t.integer  "six"
+    t.integer  "over"
+    t.integer  "maiden"
+    t.integer  "run_given"
+    t.integer  "wicket"
+    t.integer  "catch"
+    t.integer  "run_out"
+    t.integer  "stump"
     t.integer  "player_id"
     t.integer  "match_id"
-    t.string   "score"
-    t.string   "run"
-    t.string   "wicket"
-    t.string   "catch"
-    t.string   "run_out"
-    t.string   "stumpig"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
-  add_index "team_player_scores", ["match_id"], name: "index_team_player_scores_on_match_id", using: :btree
-  add_index "team_player_scores", ["player_id"], name: "index_team_player_scores_on_player_id", using: :btree
-  add_index "team_player_scores", ["team_id"], name: "index_team_player_scores_on_team_id", using: :btree
-
-  create_table "teams", force: :cascade do |t|
-    t.string   "name"
-    t.string   "owner"
-    t.string   "home_ground"
-    t.string   "captain"
-    t.string   "coach"
-    t.string   "official_team_site"
-    t.string   "rank"
-    t.float    "point"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
+  add_index "score_cards", ["match_id"], name: "index_score_cards_on_match_id", using: :btree
+  add_index "score_cards", ["player_id"], name: "index_score_cards_on_player_id", using: :btree
 
   create_table "user_teams", force: :cascade do |t|
     t.integer  "user_id"
-    t.hstore   "player"
-    t.string   "power_player"
     t.integer  "match_id"
     t.float    "total_score"
-    t.string   "rank"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.boolean  "power_player",   default: false
+    t.integer  "player_id"
+    t.integer  "bowling_point"
+    t.integer  "batting_point"
+    t.integer  "fielding_point"
   end
 
   add_index "user_teams", ["match_id"], name: "index_user_teams_on_match_id", using: :btree
+  add_index "user_teams", ["player_id"], name: "index_user_teams_on_player_id", using: :btree
   add_index "user_teams", ["user_id"], name: "index_user_teams_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
@@ -152,15 +142,17 @@ ActiveRecord::Schema.define(version: 20170504103517) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "display_name"
+    t.string   "team_name"
+    t.integer  "total_point"
+    t.integer  "ranking"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  add_foreign_key "players", "teams"
-  add_foreign_key "team_player_scores", "matches"
-  add_foreign_key "team_player_scores", "players"
-  add_foreign_key "team_player_scores", "teams"
+  add_foreign_key "score_cards", "matches"
+  add_foreign_key "score_cards", "players"
   add_foreign_key "user_teams", "matches"
   add_foreign_key "user_teams", "users"
 end
