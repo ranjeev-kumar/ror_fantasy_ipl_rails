@@ -3,8 +3,8 @@
 </div>
 <div class="field-unit__field">
   <%= f.select field.attribute,
-               Player.all.map { |p| [p.name, p.id] },
-               { prompt: "Select Player" },
+               User.all.map { |u| [u.name, u.id] },
+               { prompt: "Select User" },
                { class: 'chosen-select' }
   %>
 </div>

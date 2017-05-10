@@ -49,7 +49,7 @@ end
 
 json = ActiveSupport::JSON.decode(File.read('teams/rps.json'))
 json.each do |rps|
-  Player.create!(name: rps[1]['full_name'], franchise_id: 6)
+  Player.create!(name: rps[1]['full_name'], franchise_id: 7)
 end
 
 json = ActiveSupport::JSON.decode(File.read('teams/gl.json'))

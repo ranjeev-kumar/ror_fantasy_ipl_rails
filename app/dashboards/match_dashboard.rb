@@ -9,15 +9,19 @@ class MatchDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    team1_id: Field::String,
-    team2_id: Field::String,
+    team1_id: Field::Number,
+    team2_id: Field::Number,
     match_date: Field::DateTime,
     start_time: Field::DateTime,
     end_time: Field::DateTime,
     team1_score: Field::String,
     team2_score: Field::String,
+    team1_over: Field::Number.with_options(decimals: 2),
+    team2_over: Field::Number.with_options(decimals: 2),
+    toss: Field::String,
     winner: Field::String,
     match_result: Field::String,
+    match_player: Field::PlayerField.with_options(searchable: false),
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -31,6 +35,10 @@ class MatchDashboard < Administrate::BaseDashboard
     :id,
     :team1_id,
     :team2_id,
+    :team1_score,
+    :team2_score,
+    :winner,
+    :match_player,
     :match_date,
   ].freeze
 
@@ -45,8 +53,12 @@ class MatchDashboard < Administrate::BaseDashboard
     :end_time,
     :team1_score,
     :team2_score,
+    :team1_over,
+    :team2_over,
+    :toss,
     :winner,
     :match_result,
+    :match_player,
     :created_at,
     :updated_at,
   ].freeze
@@ -62,8 +74,12 @@ class MatchDashboard < Administrate::BaseDashboard
     :end_time,
     :team1_score,
     :team2_score,
+    :team1_over,
+    :team2_over,
+    :toss,
     :winner,
     :match_result,
+    :match_player
   ].freeze
 
   # Overwrite this method to customize how matches are displayed

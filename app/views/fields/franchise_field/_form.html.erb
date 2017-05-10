@@ -3,7 +3,7 @@
 </div>
 <div class="field-unit__field">
   <%= f.select field.attribute,
-               Franchise.all.map { |f| [f.name, f.id] },
+               Franchise.all.map { |fn| [fn.name, fn.id] },
                { prompt: "Select Franchise" },
                { class: 'chosen-select' }
   %>

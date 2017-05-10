@@ -14,6 +14,7 @@ class FranchiseDashboard < Administrate::BaseDashboard
     owner_name: Field::String,
     captain: Field::String,
     point: Field::Number.with_options(decimals: 2),
+    ranking: Field::Number,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -28,6 +29,8 @@ class FranchiseDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :owner_name,
+    :point,
+    :ranking,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,6 +42,7 @@ class FranchiseDashboard < Administrate::BaseDashboard
     :owner_name,
     :captain,
     :point,
+    :ranking,
     :created_at,
     :updated_at,
   ].freeze
@@ -52,6 +56,7 @@ class FranchiseDashboard < Administrate::BaseDashboard
     :owner_name,
     :captain,
     :point,
+    :ranking,
   ].freeze
 
   # Overwrite this method to customize how franchises are displayed

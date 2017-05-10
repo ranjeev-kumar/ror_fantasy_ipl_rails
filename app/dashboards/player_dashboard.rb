@@ -11,8 +11,9 @@ class PlayerDashboard < Administrate::BaseDashboard
     franchise: Field::FranchiseField.with_options(searchable: false),
     id: Field::Number,
     name: Field::String,
-    type: Field::String,
-    point: Field::Number.with_options(decimals: 2),
+    role: Field::String,
+    capped: Field::Boolean,
+    indian: Field::Boolean,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -26,7 +27,9 @@ class PlayerDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :franchise,
-    :type,
+    :role,
+    :capped,
+    :indian,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -35,8 +38,9 @@ class PlayerDashboard < Administrate::BaseDashboard
     :franchise,
     :id,
     :name,
-    :type,
-    :point,
+    :role,
+    :capped,
+    :indian,
     :created_at,
     :updated_at,
   ].freeze
@@ -47,8 +51,9 @@ class PlayerDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :franchise,
     :name,
-    :type,
-    :point,
+    :role,
+    :capped,
+    :indian
   ].freeze
 
   # Overwrite this method to customize how players are displayed

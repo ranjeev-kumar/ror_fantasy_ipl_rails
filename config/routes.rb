@@ -3,15 +3,13 @@ Rails.application.routes.draw do
     resources :users
     resources :matches
     resources :players
-    resources :points
-    resources :teams
-    resources :team_player_scores
     resources :user_teams
+    resources :franchises
+    resources :score_cards
 
     root to: "users#index"
   end
 
-resources :teams
 devise_for :users
 resources :dashboards
 root to: 'dashboards#index'

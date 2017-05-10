@@ -19,7 +19,7 @@ module Admin
     # for more information
 
     def create
-      @player = Player.new(franchise_id: params['player']['franchise'], name: params['player']['name'], type: params['player']['type'], point: params['player']['point'])
+      @player = Player.new(franchise_id: params['player']['franchise'], name: params['player']['name'], role: params['player']['role'])
       respond_to do |format|
         if @player.save
           format.html { redirect_to admin_player_url(@player), notice: 'Player was successfully created.' }

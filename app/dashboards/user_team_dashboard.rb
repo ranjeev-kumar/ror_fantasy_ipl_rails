@@ -8,13 +8,15 @@ class UserTeamDashboard < Administrate::BaseDashboard
   # which determines how the attribute is displayed
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
-    user: Field::BelongsTo,
+    user: Field::UserField.with_options(searchable: false),
     match: Field::BelongsTo,
+    player: Field::PlayerField.with_options(searchable: false),
     id: Field::Number,
-    player: Field::String.with_options(searchable: false),
-    power_player: Field::String,
+    power_player: Field::Boolean,
+    bowling_point: Field::Number,
+    batting_point: Field::Number,
+    fielding_point: Field::Number,
     total_score: Field::Number.with_options(decimals: 2),
-    rank: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -29,6 +31,11 @@ class UserTeamDashboard < Administrate::BaseDashboard
     :match,
     :id,
     :player,
+    :power_player,
+    :batting_point,
+    :bowling_point,
+    :fielding_point,
+    :total_score,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,8 +46,10 @@ class UserTeamDashboard < Administrate::BaseDashboard
     :id,
     :player,
     :power_player,
+    :batting_point,
+    :bowling_point,
+    :fielding_point,
     :total_score,
-    :rank,
     :created_at,
     :updated_at,
   ].freeze
@@ -53,8 +62,10 @@ class UserTeamDashboard < Administrate::BaseDashboard
     :match,
     :player,
     :power_player,
+    :batting_point,
+    :bowling_point,
+    :fielding_point,
     :total_score,
-    :rank,
   ].freeze
 
   # Overwrite this method to customize how user teams are displayed

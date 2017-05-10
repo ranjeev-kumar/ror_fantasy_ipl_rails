@@ -1,18 +1,18 @@
 module Admin
-  class PointsController < Admin::ApplicationController
+  class ScoreCardsController < Admin::ApplicationController
     # To customize the behavior of this controller,
     # you can overwrite any of the RESTful actions. For example:
     #
     # def index
     #   super
-    #   @resources = Point.
+    #   @resources = ScoreCard.
     #     page(params[:page]).
     #     per(10)
     # end
 
     # Define a custom finder by overriding the `find_resource` method:
     # def find_resource(param)
-    #   Point.find_by!(slug: param)
+    #   ScoreCard.find_by!(slug: param)
     # end
 
     # See https://administrate-prototype.herokuapp.com/customizing_controller_actions
